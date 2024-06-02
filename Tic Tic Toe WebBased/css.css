@@ -1,0 +1,70 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+nav{
+  color: white;
+  background-color: black;
+}
+nav li{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 50px;
+}
+#container,#rounds{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+[class^="round_"] {
+  /* background-color: brown; */
+  width: 26vw; /* 30% of the viewport width */
+  height: 40vh; /* 35% of the viewport height */
+  display: flex;
+  flex-direction: column;
+}
+input{
+  border: none;
+  font-size: 4em;
+  text-align: center;
+  caret-color: transparent
+}
+input:focus{
+ outline: none;
+}
+[class^="round_"] >div{
+  flex:1;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  
+  text-align: center;
+  line-height: 100px; 
+  cursor: pointer;
+}
+.top{
+  border-bottom: 2px solid black;
+}
+.bottom{
+  border-top: 2px solid black;
+}
+.inner_top{
+  width: 33%;
+  height: 100%;
+  /* background-color: brown; */
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+.id_block{
+  width: 33%;
+  height: 100%;
+}
+h1{
+  margin-top: 100px;
+  font-size: 100px;
+ text-align: center;
+}
+input:disabled {
+  background-color: white;
+}
