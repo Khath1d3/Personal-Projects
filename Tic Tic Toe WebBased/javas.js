@@ -1,8 +1,22 @@
-var R1 = document.querySelectorAll("[class^='one_'] input");
-var R2 = document.querySelectorAll("[class^='two_'] input");
-var R3 = document.querySelectorAll("[class^='three_'] input");
+cloneRounds();
+var R1 = document.querySelectorAll("[class^='round_1'] input");
+var R2 = document.querySelectorAll("[class^='round_2'] input");
+var R3 = document.querySelectorAll("[class^='round_3'] input");
 var h2 = document.querySelector("h1")
 var playerturn='X';
+
+function cloneRounds() {
+    const round1 = document.querySelector('.round_1');
+    const container = document.querySelector('#container');
+  
+    for (let i = 2; i <= 3; i++) {
+      const round = round1.cloneNode(true);
+      round.classList.replace(`round_1`, `round_${i}`);
+      container.appendChild(round);
+    }
+  }
+  
+
 
 
 function disable(R){
