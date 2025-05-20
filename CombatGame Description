@@ -1,0 +1,19 @@
+This is a 2D fighting game developed in Unity using C#, created by a group of four students.
+Players can select from multiple fighters, each with unique abilities, and battle against AI or each other. 
+The game features combo attacks, blocking, health management, and a special double-damage mechanic triggered by specific key combinations.
+
+To ensure a clean and maintainable architecture, several design patterns were implemented:
+
+State Pattern to manage character states like idle, walking, attacking, and dying.
+
+Command Pattern to handle user input and actions like attacking and blocking.
+
+Strategy Pattern to define and manage different attack styles per character.
+
+Abstract Factory Pattern to generate related attack strategies for each fighter.
+
+Observer Pattern to update the health UI in real time as fighters take damage.
+
+Decorator Pattern to apply enhancements like double-damage effects on attacks.
+
+This combination of gameplay mechanics and design patterns resulted in a well-structured and engaging combat experience.
